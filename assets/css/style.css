@@ -30,18 +30,20 @@ body::before {
   z-index: -1;
 }
 
+@media (max-width: 350px) {
+  body::before {
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+
 @media (min-width: 1024px) {
   body::before {
     background-attachment: fixed;
   }
 }
 
-@media (max-width: 350px) {
-  body::before {
-    background-position: center;
-    background-size: auto;
-  }
-}
 a {
   color: #18d26e;
   text-decoration: none;
